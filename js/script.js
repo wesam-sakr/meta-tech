@@ -88,6 +88,17 @@ $(document).ready(function () {
     console.log(code);
   }
 
+  // toggle password type
+  $('.pass').click(function () {
+    $(this).children('i').toggleClass("bi-unlock bi-lock");
+    var pass = $(this).closest('.input-group').find('input')[0];
+    console.log(pass);
+    if (pass.type == "password") {
+      pass.setAttribute("type", "text");
+    } else {
+      pass.setAttribute("type", "password");
+    }
+  })
 
   $(".heroSec .owl-carousel").owlCarousel({
     loop: true,

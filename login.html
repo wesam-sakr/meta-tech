@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>meta-tech</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png" />
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/nice-select.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <!-- ======== scroll top ======== -->
+        <a href="javascript:void(0)" id="scroll-top">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+
+        <!-- ======== loading ======== -->
+        <section id="loading">
+            <div class="logo-spinner-wrapper">
+                <div class="spinner"></div>
+                <img src="images/logo.png" alt="Logo" class="center-logo">
+
+            </div>
+            <h1 class="name-animation" data-text="ميتا تك">
+                ميتا تك</h1>
+        </section>
+
+        <header>
+            <!-- ======== 1. Top Bar ======== -->
+            <div class="top-bar">
+                <div
+                    class="container-lg d-flex align-items-center justify-content-between">
+                    <!-- welcome text -->
+                    <p class="welcome-text">
+                        أهلاً بكم في متجر ميتا تك لكل ما تحتاجونه من أجهزة
+                        كهربائية
+                        وإلكترونية 🛒⚡️
+                    </p>
+
+                    <!-- change language -->
+                    <div class="language-switcher">
+                        <label for="language-select" class="sr-only">اختر
+                            اللغة</label>
+                        <select name="language" id="language-select">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== 2. Mid Bar ======== -->
+            <div class="mid-bar">
+                <div
+                    class="container-lg d-flex align-items-center justify-content-between">
+                    <!-- main nav -->
+                    <nav class="navbar navbar-expand-lg navbar-light p-0"
+                        aria-label="القائمة الرئيسية">
+                        <!-- toggler nav button for mobile screen -->
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#primaryNavbar"
+                            aria-controls="primaryNavbar"
+                            aria-expanded="false"
+                            aria-label="قائمة التنقل">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- nav list -->
+                        <div class="collapse navbar-collapse"
+                            id="primaryNavbar">
+                            <ul
+                                class="nav-links navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center gap-2 gap-md-4">
+                                <li>
+                                    <a href="index.html" class="active"
+                                        aria-label="الرئيسية">الرئيسية</a>
+                                </li>
+
+                                <!-- ===== الأقسام مع Mega‑Menu عند hover ===== -->
+                                <li class="nav-item dropdown category-dropdown">
+                                    <a
+                                        href="#"
+                                        class="nav-link"
+                                        id="categoriesMenu"
+                                        aria-label="الأقسام">
+                                        الأقسام
+                                        <i
+                                            class="bi bi-chevron-down ms-1 arrow-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu p-3"
+                                        aria-labelledby="categoriesMenu">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs"
+                                            id="categoryTabs" role="tablist">
+                                            <li class="nav-item"
+                                                role="presentation">
+                                                <button
+                                                    class="nav-link active"
+                                                    id="tab1-tab"
+                                                    data-bs-toggle="tab"
+                                                    data-bs-target="#tab1"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="tab1"
+                                                    aria-selected="true">
+                                                    <span> أجهزة كهربائية
+                                                    </span>
+                                                    <i
+                                                        class="bi bi-chevron-double-left"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item"
+                                                role="presentation">
+                                                <button
+                                                    class="nav-link"
+                                                    id="tab2-tab"
+                                                    data-bs-toggle="tab"
+                                                    data-bs-target="#tab2"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="tab2"
+                                                    aria-selected="false">
+                                                    <span>موبايلات</span>
+                                                    <i
+                                                        class="bi bi-chevron-double-left"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item"
+                                                role="presentation">
+                                                <button
+                                                    class="nav-link"
+                                                    id="tab3-tab"
+                                                    data-bs-toggle="tab"
+                                                    data-bs-target="#tab3"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="tab3"
+                                                    aria-selected="false">
+                                                    <span>مركبات</span>
+                                                    <i
+                                                        class="bi bi-chevron-double-left"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content py-4"
+                                            id="categoryTabsContent">
+                                            <div
+                                                class="tab-pane fade show active"
+                                                id="tab1"
+                                                role="tabpanel"
+                                                aria-labelledby="tab1-tab">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/fridge_1.png"
+                                                                alt>
+                                                            <span>ثلاجات</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/machine.png"
+                                                                alt>
+                                                            <span>غسالات</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/oven.png"
+                                                                alt>
+                                                            <span>بتوجازات</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/air-conditioning.png"
+                                                                alt>
+                                                            <span>تكييفات</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/fridge.png"
+                                                                alt>
+                                                            <span>فريزر</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/monitor.png"
+                                                                alt>
+                                                            <span>شاشة</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/blender.png"
+                                                                alt>
+                                                            <span>خلاط
+                                                                وملحقاته</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/water-heater.png"
+                                                                alt>
+                                                            <span>سخان</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/oven_min.png"
+                                                                alt>
+                                                            <span>فرن</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/propeller.png"
+                                                                alt>
+                                                            <span>شفاط</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/air-fryer.png"
+                                                                alt>
+                                                            <span>قلاية</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/water-dispenser.png"
+                                                                alt>
+                                                            <span>مبرد</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/fan.png"
+                                                                alt>
+                                                            <span>مروحة</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/vaccum-cleaner.png"
+                                                                alt>
+                                                            <span>مكنسة</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/iron.png"
+                                                                alt>
+                                                            <span>مكوه</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/microwave.png"
+                                                                alt>
+                                                            <span>ميكرويف</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div
+                                                class="tab-pane fade"
+                                                id="tab2"
+                                                role="tabpanel"
+                                                aria-labelledby="tab2-tab">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/mobile.png"
+                                                                alt>
+                                                            <span>موبايلات</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div
+                                                class="tab-pane fade"
+                                                id="tab3"
+                                                role="tabpanel"
+                                                aria-labelledby="tab3-tab">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/bajaj.png"
+                                                                alt>
+                                                            <span>تروسيكل</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/motorcycle.png"
+                                                                alt>
+                                                            <span>موتوسيكل</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="#">
+                                                            <img
+                                                                src="images/categories/rickshaw.png"
+                                                                alt>
+                                                            <span>توكتوك</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ===== نهاية الأقسام ===== -->
+
+                                <li>
+                                    <a href="free-pricing.html"
+                                        aria-label="التسعير الحر">التسعير
+                                        الحر</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html"
+                                        aria-label="تواصل معنا">تواصل
+                                        معنا</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- call number -->
+                    <div class="contact-info">
+                        <a href="tel:201000006273" class="call-us">
+                            <span class="phone-number">201000006273</span>
+                            <span class="phone-icon"><i
+                                    class="bi bi-telephone-fill"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== 3. Bottom Bar ======== -->
+            <div class="bottom-bar">
+                <div
+                    class="container-lg d-flex flex-md-nowrap flex-wrap gap-2 align-items-center justify-content-between">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a
+                            class="navbar-brand d-flex align-items-center gap-2 m-0"
+                            href="index.html"
+                            aria-label="الصفحة الرئيسية">
+                            <img src="images/logo.png" alt="ميتا تك" />
+                            <span>ميتا تك</span>
+                        </a>
+                    </div>
+
+                    <!-- search form -->
+                    <form class="search-box" action="/search" method="GET"
+                        role="search">
+                        <label for="category-search" class="sr-only">اختر
+                            الفئة</label>
+                        <select name="category" id="category-search">
+                            <option value>كل الفئات</option>
+                        </select>
+
+                        <label for="search-input" class="sr-only">ابحث عن
+                            منتج</label>
+                        <input
+                            type="search"
+                            id="search-input"
+                            name="q"
+                            placeholder="كلمة البحث" />
+
+                        <button type="submit" aria-label="ابحث">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+                    <!-- site icons -->
+                    <ul
+                        class="auth d-flex align-items-center justify-content-center gap-3">
+                        <li>
+                            <a href="cart.html" aria-label="سلة التسوق">
+                                <i class="bi bi-cart"></i>
+                                <span class="cart-num">2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="favourite.html" aria-label="المفضلة">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" aria-label="حسابي">
+                                <i class="bi bi-person"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- breadcrumb  -->
+        <section class="breadcrumb-wrapper">
+            <div class="container-lg">
+                <nav style="--bs-breadcrumb-divider: '||'"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a
+                                href="index.html">الرئيسية</a></li>
+                        <li class="breadcrumb-item active"
+                            aria-current="page">تسجيل الدخول</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- login us -->
+        <section class="login mb-5">
+            <div class="container-lg">
+                <div class="row align-items-center gy-4">
+                    <div class="col-md-6">
+                        <img src="images/login-animate.svg" alt>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="login-form-wrapper">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <button class="log-by-facebook">
+                                        <i
+                                            class="fa-brands fa-facebook-f"></i>
+                                        <span>تسجيل دخول بواسطة
+                                            فيسبوك</span>
+                                    </button>
+                                </div>
+                                <div class="col-12">
+                                    <button class="log-by-google">
+                                        <img
+                                            src="images/google-icon.png">
+                                        <span>تسجيل دخول بواسطة
+                                            جوجل</span>
+                                    </button>
+                                </div>
+                                <div class="col-12">
+                                    <span
+                                        class="text-center d-block fs-5">او</span>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <label class="form-label">
+                                        رقم الجوال او البريد
+                                        الإلكتروني</label>
+                                    <input type=""
+                                        class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">
+                                        كلمةالمرور
+                                    </label>
+                                    <div class="input-group mb-3">
+                                        <input type="password"
+                                            class="form-control">
+                                        <button type="button"
+                                            class="input-group-text pass"
+                                            title="show pass"
+                                            aria-label="اظهار كلمة المرور">
+                                            <i class="bi bi-lock"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="checkbox">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <label class="form-check-label"
+                                                    for="flexCheckDefault">
+                                                    تذكرني
+                                                    
+                                                </label>
+                                                <a href="forgotPass.html" class="text-decoration-underline text-muted">
+                                                   نسيت كلمة المرور 
+                                                </a>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="main-btn w-100">
+                                        دخول
+                                    </button>
+                                </div>
+                                <div class="col-12 text-center">
+                                    ليس لديك حساب ؟
+                                    <a href="login.html" class="mint">
+                                        إنشاء حساب
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== subscribe section ======== -->
+        <section class="subscribe py-4">
+            <div class="container-lg">
+                <div class="row gy-3 align-items-center">
+                    <div class="col-md-6">
+                        <div
+                            class="d-flex align-items-center gap-3 subscribe-info">
+                            <i class="fs-1 bi bi-envelope"></i>
+                            <div>
+                                <h6 class="fw-light mb-2">اشترك في النشرة
+                                    الإخبارية لدينا</h6>
+                                <p class="mb-0">
+                                    احصل على أحدث المعلومات حول الأحداث
+                                    والمبيعات والعروض
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form action>
+                            <div class="d-flex gap-3 w-100">
+                                <input
+                                    type="email"
+                                    class="form-control bg-transparent"
+                                    placeholder="البريد الإلكتروني" />
+                                <button
+                                    class="subscribe_btn form-control w-auto">
+                                    اشتراك
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-lg">
+                <div class="mb-5 row gy-4 justify-content-between">
+                    <div class="col-lg-3">
+                        <div class="logo mb-3">
+                            <a
+                                class="navbar-brand d-flex align-items-center gap-2 m-0"
+                                href="index.html"
+                                aria-label="الصفحة الرئيسية">
+                                <img src="images/logo.png" alt="ميتا تك" />
+                                <span>ميتا تك</span>
+                            </a>
+                        </div>
+                        <p class="description">
+                            <span> ميتــــــــــــا تـــــــــك </span>
+                            وجهتك الموثوقة للأجهزة الكهربائية والإلكترونية بأفضل
+                            الأسعار وجودة
+                            مضمونة
+                        </p>
+                    </div>
+                    <div class="col-md-auto">
+                        <h5>خريطة الموقع</h5>
+                        <ul>
+                            <li>
+                                <a href="index.html">الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">المنتجات</a>
+                            </li>
+                            <li>
+                                <a href="return.html">التسعير الحر</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-auto">
+                        <h5>حسابي</h5>
+                        <ul>
+                            <li>
+                                <a href="profile.html">الملف الشخصي</a>
+                            </li>
+                            <li>
+                                <a href="cart.html">سلة الشراء</a>
+                            </li>
+                            <li>
+                                <a href="favourite.html">المفضلة</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-auto">
+                        <h5>المساعدة</h5>
+                        <ul>
+                            <li>
+                                <a href="terms.html">الشروط والأحكام</a>
+                            </li>
+                            <li>
+                                <a href="terms.html">سياسة الخصوصية</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">تواصل معنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-2">
+                        <h5>تواصل معنا</h5>
+                        <ul>
+                            <li>
+                                <a href>
+                                    <b> العنوان </b>
+                                    <span>
+                                        : عزبة البسيوني - برج نور العرب مركز
+                                        السنبلاوين -
+                                        الدقهلية</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:201059862147">
+                                    <b> رقم الجوال </b>
+                                    <span> :201059862147 </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="social-icons">
+                            <a
+                                href
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="تويتر">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a
+                                href
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="إنستاجرام">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a
+                                href
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="لينكدإن">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a
+                                href
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="فيسبوك">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rights">
+                <span>2025 جميع الحقوق محفوظة لموقع سمارت فيجن</span>
+                <img src="images/smart-logo.svg"
+                    alt="شركة سمارت فيجن للبرمجة" />
+            </div>
+        </footer>
+
+        <!-- jQuery script -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+
+        <!-- owl-carousel script -->
+        <script src="js/owl.carousel.min.js"></script>
+
+        <!-- bootstrap script -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- nice select script -->
+        <script src="js/jquery.nice-select.min.js"></script>
+
+        <!-- rateyo script -->
+        <script src="js/jquery.rateyo.min.js"></script>
+
+        <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+
+        <!-- wow script -->
+        <!-- <script src="js/wow.min.js"></script> -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

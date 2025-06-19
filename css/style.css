@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Changa:wght@200..800&display=swap');
+
 :root {
    --white: #fff;
    --lite: #DBDBDB;
@@ -12,7 +14,7 @@
    --black: #000000;
 }
 
-@font-face {
+/* @font-face {
    font-family: "Bahij";
    src: url('../font/Bahij/Bahij_TheSansArabic-Bold.ttf');
    font-weight: bold;
@@ -59,10 +61,10 @@
    src: url('../font/Bahij/Bahij_TheSansArabic-ExtraLight.ttf'), ;
    font-weight: 200;
    font-style: normal;
-}
+} */
 
 * {
-   font-family: 'Bahij', sans-serif;
+   font-family: 'Almarai', sans-serif;
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -345,7 +347,7 @@ iframe {
    max-width: 100%;
    min-width: 150px;
    text-align: center;
-   padding: .4rem .75rem;
+   padding: .75rem;
    -webkit-border-radius: 6px;
 }
 
@@ -557,7 +559,7 @@ img {
    visibility: visible;
 }
 
-.mint {
+.main {
    color: var(--main);
 }
 
@@ -2122,12 +2124,13 @@ ul.plan_list li {
    border-bottom: 1px solid #dfdfdf;
    padding: 12px 0;
 }
-ul.plan_list li label{
+
+ul.plan_list li label {
    display: flex;
    align-items: center;
 }
 
-ul.plan_list li label input{
+ul.plan_list li label input {
    margin-inline-end: 8px;
    accent-color: var(--main);
 }
@@ -2152,24 +2155,59 @@ ul.plan_list li:last-child {
 }
 
 /* --------== login page ==-------- */
+.login-form-wrapper {
+   background: #F6F6F6;
+   padding: 2.5rem;
+   border-radius: 16px;
+   -webkit-border-radius: 16px;
+   -moz-border-radius: 16px;
+   -ms-border-radius: 16px;
+   -o-border-radius: 16px;
+}
+
+.log-by-facebook,
+.log-by-google {
+   width: 100%;
+   padding: .75rem;
+   background: #3C5A98;
+   color: #fff;
+   font-weight: 600;
+   border-radius: 5px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.log-by-google {
+   background: #FCFCFC;
+   color: var(--dark);
+}
+
+.log-by-facebook img,
+.log-by-google img {
+   width: 25px
+}
+
 .login .form-control {
    border: 1px solid #F5F5F5;
-   padding: .575rem .75rem;
+   padding: .719rem .75rem;
 }
 
 .login .input-group-text {
    background: #fff;
    color: var(--main);
-   border: 1px solid #F5F5F5;
+   border: unset;
+   /* border: 1px solid #d89191; */
 }
 
-.login .form-control::placeholder {
-   color: #AEAEAE;
-   font-size: 14px;
+.login label {
+   color: #707070;
 }
 
 .login .form-check-input[type=checkbox] {
-   border-color: #B7B7B7 !important;
+   /* border-color: #B7B7B7 !important; */
    width: 1.1em;
    height: 1.1em;
 }
@@ -2179,8 +2217,8 @@ ul.plan_list li:last-child {
    background-repeat: no-repeat no-repeat;
    background-position: center center;
    background-size: cover;
-   border: 1px solid #8CBF48 !important;
-   background-color: #8CBF48;
+   border: 1px solid var(--main) !important;
+   background-color: var(--main);
 }
 
 .login .notes,
@@ -2215,14 +2253,14 @@ ul.plan_list li:last-child {
    direction: ltr;
 }
 
-.pass {
+/* .pass {
    cursor: pointer;
    position: absolute;
    top: 0;
    inset-inline-end: 10px;
    color: #838383;
    transform: translate(0, 50%);
-}
+} */
 
 /* --------== contact page ==-------- */
 .contact-data .contact-info {
@@ -2563,7 +2601,7 @@ html[dir='ltr'] #wizard .step.finish::after {
    overflow-y: auto;
 }
 
-html[dir="rtl"] .input-group .form-control {
+/* html[dir="rtl"] .input-group .form-control {
    border-top-left-radius: .357rem !important;
    border-bottom-left-radius: .357rem !important;
 }
@@ -2571,7 +2609,7 @@ html[dir="rtl"] .input-group .form-control {
 html[dir="ltr"] .input-group .form-control {
    border-top-right-radius: .357rem !important;
    border-bottom-right-radius: .357rem !important;
-}
+} */
 
 .text-delete,
 .text-delete .bi {
