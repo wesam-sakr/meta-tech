@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
   var bodyDir = $('body').css('direction')
   var dirAr
   if (bodyDir == "rtl") {
@@ -9,10 +8,6 @@ $(document).ready(function () {
   else {
     dirAr = false
   }
-
-  
-
-
 
   // loading
 
@@ -29,8 +24,6 @@ $(document).ready(function () {
   $('.toggleFav').click(function () {
     $(this).toggleClass('added')
   })
-
-
 
   // ----- scroll top button ------
 
@@ -64,7 +57,6 @@ $(document).ready(function () {
       qtyInput.value = current;
     });
   });
-
 
   const inputElements = [...document.querySelectorAll("input.code")];
   inputElements.forEach((ele, index) => {
@@ -261,7 +253,6 @@ $(document).ready(function () {
     $(".slider-two .owl-next").trigger("click");
   });
 
-
   $("#your-rate").rateYo({
     starWidth: "15px",
     ratedFill: "#FA8232",
@@ -269,7 +260,6 @@ $(document).ready(function () {
     fullStar: true,
     rtl: dirAr
   });
-
 
   $(".add-address").click(function () {
     if ($(".form-address").css("display") == "block") {
