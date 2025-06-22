@@ -10,6 +10,9 @@ $(document).ready(function () {
     dirAr = false
   }
 
+  
+
+
 
   // loading
 
@@ -26,6 +29,7 @@ $(document).ready(function () {
   $('.toggleFav').click(function () {
     $(this).toggleClass('added')
   })
+
 
 
   // ----- scroll top button ------

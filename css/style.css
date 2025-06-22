@@ -338,17 +338,24 @@ iframe {
 }
 
 
-.main-btn {
+.main-btn,
+.main-outline-btn {
    display: inline-block;
    background: var(--main) !important;
    color: var(--white) !important;
+   border: 1px solid var(--main) !important;
    border-radius: 6px;
    font-weight: 500;
    max-width: 100%;
    min-width: 150px;
    text-align: center;
-   padding: .75rem;
+   padding: .625rem;
+   max-height: 49px;
    -webkit-border-radius: 6px;
+}
+.main-outline-btn{
+   background: transparent !important;
+   color: var(--main) !important;
 }
 
 .form-label {
@@ -560,7 +567,7 @@ img {
 }
 
 .main {
-   color: var(--main);
+   color: var(--main) !important;
 }
 
 
@@ -1425,6 +1432,10 @@ img {
    max-width: 40%;
 }
 
+.collection .card .product-action {
+   display: none !important;
+}
+
 .collection .card .card-img-top img {
    aspect-ratio: 6 / 5;
 }
@@ -2076,6 +2087,7 @@ body:has(.offcanvas.show) .owl-carousel {
    padding: 1px .5rem;
 }
 
+.green-alert,
 .product_details .sub_cat {
    background: #DBFFDB;
    border-radius: 4px;
@@ -2328,42 +2340,44 @@ ul.plan_list li:last-child {
 
 /* --------== cart page ==-------- */
 
-#wizard {
+/* #wizard {
    padding: 0px;
    width: 100%;
    min-width: 300px;
 }
 
-#wizard .tab {
+.tab {
    display: none;
-}
+} */
 
-#wizard h1 {
+/* #wizard h1 {
    text-align: center;
-}
+} */
 
 /* Mark input boxes that gets an error on validation: */
-#wizard .required.invalid {
+/* .required.invalid {
    background-color: #ed1c2393;
-}
+} */
 
 /* Hide all steps by default: */
 
-#wizard #prevBtn {
+/* #wizard #prevBtn {
    background-color: #bbbbbb;
-}
+} */
 
 /* Make circles that indicate the steps of the form: */
 .steps-container {
    width: 100%;
    margin: 0 auto 80px;
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
+   gap: 12rem;
    text-align: center;
 }
 
-#wizard .step {
+
+.steps-container .step {
    border: none;
    color: #2A2A2A;
    position: relative;
@@ -2387,38 +2401,42 @@ ul.plan_list li:last-child {
    font-size: 20px;
 }
 
-.complete-order:hover,
+/* .complete-order:hover,
 .complete-order {
    background: var(--main);
    color: var(--white);
    width: 250px;
    padding: 6px;
-}
+} */
 
-.add-address {
+/* .add-address {
    font-weight: bold;
    width: max-content;
    padding-inline: 1rem;
    color: var(--main);
    border-inline-start: 3px solid var(--main);
-}
+} */
 
 .btn .btn-dark {
    width: 250px;
 }
 
-.payment-tab small,
+/* .payment-tab small,
 .address-tab small {
    padding: 0 20px;
    border-radius: 4px;
    border: 1px solid #DBDBDB;
    width: 100%;
-}
+} */
 
 .cart .cart-title {
-   background: #F6F6F6;
-   border: 1px solid #F6F6F6;
-   border-radius: 8px;
+   background: var(--white);
+   border: 1px solid #E4E7E9;
+   border-radius: 12px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   -ms-border-radius: 12px;
+   -o-border-radius: 12px;
 }
 
 .cart .nice-select,
@@ -2444,7 +2462,11 @@ ul.plan_list li:last-child {
    font-size: 14px;
 }
 
-.cart .form-check-input[type=radio] {
+.down-payment{
+
+}
+
+/* .cart .form-check-input[type=radio] {
    border-radius: 50% !important;
    border-color: var(--main) !important;
    width: 1.1rem;
@@ -2454,7 +2476,7 @@ ul.plan_list li:last-child {
 .cart .form-check-input:checked[type=radio] {
    background: white;
    border-width: 5px;
-}
+} */
 
 .value-output {
    width: 25px;
@@ -2480,28 +2502,32 @@ ul.plan_list li:last-child {
    height: 170px;
    object-fit: cover;
    background: var(--white);
-   border: 1px solid #CECECE;
+   border: 1px solid #E4E7E9;
    border-radius: 15px;
 }
 
-#wizard .order-summary .count-total {
+.order-summary .count-total {
    color: var(--main);
 }
 
-#wizard .order-summary {
+.order-summary {
    background: #FCFCFC;
-   border: 1px solid #E5E5E5;
+   border: 1px solid #E4E7E9;
    line-height: 2;
-   border-radius: 18px;
+   border-radius: 14px;
+   -webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+   -ms-border-radius: 14px;
+   -o-border-radius: 14px;
 }
 
-#wizard .step.active,
-#wizard .step.finish {
+.step.active,
+.step.finish {
    opacity: 1;
 }
 
-#wizard .step.active::after,
-#wizard .step.finish::after {
+.step.active::after,
+.step.finish::after {
    content: "";
    border: 1px dashed var(--white);
    opacity: 1;
@@ -2515,20 +2541,20 @@ ul.plan_list li:last-child {
 
 }
 
-html[dir='ltr'] #wizard .step.active::after,
-html[dir='ltr'] #wizard .step.finish::after {
+html[dir='ltr'] .step.active::after,
+html[dir='ltr'] .step.finish::after {
    width: 115px;
    transform: translateX(15px);
 }
 
-#wizard .step.finish .bi,
-#wizard .step.active .bi {
+.step.finish .bi,
+.step.active .bi {
    background-color: var(--main);
    color: var(--white);
 }
 
-#wizard .step4.active::after,
-#wizard .step4.finish::after {
+.step4.active::after,
+.step4.finish::after {
    width: 0;
 }
 
@@ -2713,7 +2739,7 @@ html[dir="ltr"] .input-group .form-control {
 /* --------== products page ==-------- */
 .filter,
 .profile-nav {
-   border: 1px solid #E5E5E5;
+   border: 1px solid #E4E7E9;
    border-radius: 11px;
    padding: 1.5rem;
    background: #F8F8F8;
@@ -2829,7 +2855,7 @@ html[dir="ltr"] .input-group .form-control {
    margin-bottom: 36px;
    border-radius: 0.5rem;
    background-color: transparent !important;
-   border: 1px solid #E5E5E5;
+   border: 1px solid #E4E7E9;
 }
 
 .profile .profile-pic img {
@@ -2912,9 +2938,9 @@ html[dir="ltr"] .input-group .form-control {
 /* --------== invoice page ==-------- */
 .table>:not(caption)>*>* {
    background: transparent;
-   text-align: center;
-   border-bottom: 1px solid gainsboro;
-   padding: 18px 5px;
+   /* text-align: center; */
+   /* border-bottom: 1px solid gainsboro; */
+   /* padding: 18px 5px; */
 }
 
 .ordNum,
@@ -3320,7 +3346,7 @@ html[dir="ltr"] .input-group .form-control {
       display: block;
    }
 
-   #wizard .step {
+   .step {
       flex-direction: column;
       gap: 10px;
    }
@@ -3330,10 +3356,10 @@ html[dir="ltr"] .input-group .form-control {
       margin: 0;
    }
 
-   #wizard .step.active::after,
-   #wizard .step.finish::after {
-      width: 30px;
-      transform: translateX(0px);
+   .step.active::after,
+   .step.finish::after {
+      width: 42vw;
+      /* transform: translateX(0px); */
       bottom: 67%;
    }
 
