@@ -309,7 +309,7 @@ $(document).ready(function () {
           img.setAttribute("src", reader.result);
         });
         reader.readAsDataURL(choosedFile);
-        $('#change_pic').css("opacity", 1);
+        $('#change_pic').css("display", 'inline-block');
       }
     });
   }

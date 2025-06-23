@@ -464,7 +464,7 @@
                         <li class="breadcrumb-item"><a
                                 href="index.html">الرئيسية</a></li>
                         <li class="breadcrumb-item active"
-                            aria-current="page">الملف الشخصي</li>
+                            aria-current="page">طلباتي</li>
                     </ol>
                 </nav>
             </div>
@@ -513,7 +513,7 @@
                             <ul class="nav flex-column gap-3">
                                 <li class="nav-item">
                                     <a
-                                        class="nav-link active"
+                                        class="nav-link"
                                         aria-current="page"
                                         href="profile.html">
                                         <i class="bi bi-person-fill"></i>
@@ -521,13 +521,15 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="changePass.html">
+                                    <a class="nav-link"
+                                        href="changePass.html">
                                         <i class="bi bi-lock-fill"></i>
                                         <span> تعديل كلمة المرور </span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="orders.html">
+                                    <a class="nav-link active"
+                                        href="orders.html">
                                         <i class="bi bi-bag-check-fill"></i>
                                         <span> طلباتي </span>
                                     </a>
@@ -550,46 +552,60 @@
                     <div class="col col-md-8 col-lg-9">
                         <div class="profile-wrapper py-5">
                             <div class="profile-data">
-                                <form action method="post">
-                                    <div class="row gy-4 mb-3">
-                                        <!-- الاسم الاول -->
-                                        <div class="col-12">
-                                            <label>الاسم </label>
-                                            <input
-                                                class="form-control"
-                                                name
-                                                value
-                                                type="text" />
-                                        </div>
-                                        <!-- البريد الالكتروني -->
-                                        <div class="col-12">
-                                            <label>البريد الالكتروني </label>
-                                            <input
-                                                class="form-control"
-                                                name="email"
-                                                value
-                                                type="email" />
-                                        </div>
-                                        <!-- رقم الجوال -->
-                                        <div class="col-12">
-                                            <label>رقم الجوال</label>
-                                            <div class="input-group">
-                                                <input type="text"
-                                                    class="form-control">
-                                                <span class="input-group-text">
-                                                    +20
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button
-                                        type="submit"
-                                        role="button"
-                                        class="main-btn w-auto px-4 mt-3">
-                                        <div class="text px-4">حفظ
-                                            التغييرات</div>
-                                    </button>
-                                </form>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>رقم الطلب</th>
+                                                <th>الكمية</th>
+                                                <th>السعر</th>
+                                                <th>التاريخ</th>
+                                                <th>حالة الطلب</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="trackOrder.html" class="main">#24548</a>
+                                                </td>
+                                                <td>5</td>
+                                                <td>21000 ج.م</td>
+                                                <td>سبتمبر 8 ,2022</td>
+                                                <td>
+                                                    <div class="status-tag completed">
+                                                        <p class="status-tag__txt">  تم التوصيل </p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="trackOrder.html" class="main">#24548</a>
+                                                </td>
+                                                <td>3</td>
+                                                <td>21000 ج.م</td>
+                                                <td>سبتمبر 8 ,2022</td>
+                                                <td>
+                                                    <div class="status-tag shipped">
+                                                        <p class="status-tag__txt">  تم الشحن </p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="trackOrder.html" class="main">#24548</a>
+                                                </td>
+                                                <td>8</td>
+                                                <td>21000 ج.م</td>
+                                                <td>سبتمبر 8 ,2022</td>
+                                                <td>
+                                                    <div class="status-tag cancelled">
+                                                        <p class="status-tag__txt">  ملغي </p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -464,7 +464,7 @@
                         <li class="breadcrumb-item"><a
                                 href="index.html">الرئيسية</a></li>
                         <li class="breadcrumb-item active"
-                            aria-current="page">الملف الشخصي</li>
+                            aria-current="page"> طلباتي </li>
                     </ol>
                 </nav>
             </div>
@@ -513,7 +513,7 @@
                             <ul class="nav flex-column gap-3">
                                 <li class="nav-item">
                                     <a
-                                        class="nav-link active"
+                                        class="nav-link"
                                         aria-current="page"
                                         href="profile.html">
                                         <i class="bi bi-person-fill"></i>
@@ -521,13 +521,15 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="changePass.html">
+                                    <a class="nav-link"
+                                        href="changePass.html">
                                         <i class="bi bi-lock-fill"></i>
                                         <span> تعديل كلمة المرور </span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="orders.html">
+                                    <a class="nav-link active"
+                                        href="orders.html">
                                         <i class="bi bi-bag-check-fill"></i>
                                         <span> طلباتي </span>
                                     </a>
@@ -548,48 +550,73 @@
                         </div>
                     </div>
                     <div class="col col-md-8 col-lg-9">
+                        <div class="profile-wrapper mb-4">
+                            <div class="arrow-steps clearfix">
+                                <div class="step done"><span> تم
+                                        التحضير</span></div>
+                                <div class="step"><span>تم الشحن</span></div>
+                                <div class="step"><span> تم
+                                        الاستلام</span></div>
+                            </div>
+                        </div>
                         <div class="profile-wrapper py-5">
                             <div class="profile-data">
-                                <form action method="post">
-                                    <div class="row gy-4 mb-3">
-                                        <!-- الاسم الاول -->
-                                        <div class="col-12">
-                                            <label>الاسم </label>
-                                            <input
-                                                class="form-control"
-                                                name
-                                                value
-                                                type="text" />
-                                        </div>
-                                        <!-- البريد الالكتروني -->
-                                        <div class="col-12">
-                                            <label>البريد الالكتروني </label>
-                                            <input
-                                                class="form-control"
-                                                name="email"
-                                                value
-                                                type="email" />
-                                        </div>
-                                        <!-- رقم الجوال -->
-                                        <div class="col-12">
-                                            <label>رقم الجوال</label>
-                                            <div class="input-group">
-                                                <input type="text"
-                                                    class="form-control">
-                                                <span class="input-group-text">
-                                                    +20
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button
-                                        type="submit"
-                                        role="button"
-                                        class="main-btn w-auto px-4 mt-3">
-                                        <div class="text px-4">حفظ
-                                            التغييرات</div>
-                                    </button>
-                                </form>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="3"
+                                                    class="main py-0">
+                                                    المنتجات
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/p1.png"
+                                                        alt>
+                                                </td>
+                                                <td>
+                                                    <span class="product_name">
+                                                        جهاز Xbox Series S - سعة
+                                                        512 جيجابايت SSD مع وحدة
+                                                        تحكم لاسلكية - الإصدار
+                                                        الأوروبي
+                                                    </span>
+                                                </td>
+                                                <td>21000 ج.م</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/p1.png"
+                                                        alt>
+                                                </td>
+                                                <td>
+                                                    <span class="product_name">
+                                                        جهاز Xbox Series S - سعة 512 جيجابايت SSD مع وحدة تحكم لاسلكية - الإصدار الأوروبي
+                                                    </span>
+                                                </td>
+                                                <td>21000 ج.م</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/p1.png"
+                                                        alt>
+                                                </td>
+                                                <td>
+                                                    <span class="product_name">
+                                                        جهاز Xbox Series S - سعة
+                                                        512 جيجابايت SSD مع وحدة
+                                                        تحكم لاسلكية - الإصدار
+                                                        الأوروبي
+                                                    </span>
+                                                </td>
+                                                <td>21000 ج.م</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

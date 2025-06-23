@@ -474,32 +474,36 @@
         <section class="profile mb-5">
             <div class="container-lg">
                 <div class="profile-wrapper mb-4">
-                    <form action="">
-                        <div class="d-flex align-items-center justify-content-between gap-3">
-                            <div class="d-flex align-items-center gap-3">
-                                <!-- profile-picture -->
-                                <div class="profile-pic position-relative">
-                                    <img class="w-100" src="images/avatar.png" alt=" الصورة الشخصيه للمستخدم فلان"
-                                        id="photo" />
-                                    <div class="profile-pic-icon">
-                                        <i class="bi bi-camera-fill"></i>
-                                    </div>
-                                    <input
-                                        type="file"
-                                        id="file"
-                                        name="photo_profile"
-                                        accept="image/*" />
+                    <form action>
+                        <div class="d-flex align-items-center gap-3">
+                            <!-- profile-picture -->
+                            <div class="profile-pic position-relative">
+                                <img class="w-100" src="images/avatar.png"
+                                    alt=" الصورة الشخصيه للمستخدم فلان"
+                                    id="photo" />
+                                <div class="profile-pic-icon">
+                                    <i class="bi bi-camera-fill"></i>
                                 </div>
-                                <!-- user-info -->
-                                <div class="user-info">
-                                   <p class="fw-semibold main fs-6">اسم المستخدم</p> 
-                                   <small class="text-muted">Username@gmail.com</small>
-                                </div>
+                                <input
+                                    type="file"
+                                    id="file"
+                                    name="photo_profile"
+                                    accept="image/*" />
                             </div>
-                            <button type="submit" class="main-btn py-2" id="change_pic">
-                                <i class="fa-solid fa-check me-1"></i>
-                                تغيير الصورة
-                            </button>
+                            <!-- user-info -->
+                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                <div class="user-info">
+                                    <p class="fw-semibold main fs-6">اسم
+                                        المستخدم</p>
+                                    <small
+                                        class="text-muted">Username@gmail.com</small>
+                                </div>
+                                <button type="submit" class="main-btn py-2"
+                                    id="change_pic">
+                                    <i class="fa-solid fa-check me-1"></i>
+                                    تغيير الصورة
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
