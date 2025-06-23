@@ -2564,7 +2564,7 @@ html[dir='ltr'] .step.finish::after {
    display: none;
 }
 
-.profile label {
+label {
    margin-bottom: .5rem;
 }
 
@@ -2671,6 +2671,12 @@ html[dir='ltr'] .step.finish::after {
    text-align: center;
 }
 
+.compare.table td .txt-cut {
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
 .del-fav {
    color: #FF0000;
    background: #FFD6D6;

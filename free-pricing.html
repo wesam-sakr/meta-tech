@@ -461,273 +461,160 @@
                 <nav style="--bs-breadcrumb-divider: '||'"
                     aria-label="breadcrumb">
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item">
-                            <a href="index.html">الرئيسية</a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">المقارنة</li>
+                        <li class="breadcrumb-item"><a
+                                href="index.html">الرئيسية</a></li>
+                        <li class="breadcrumb-item active"
+                            aria-current="page">التسعير الحر</li>
                     </ol>
                 </nav>
             </div>
         </section>
 
-        <!-- ======== profile section ======== -->
-        <section class="profile mb-5">
+        <!-- ======== free pricing section ======== -->
+        <section class="contact mb-5">
             <div class="container-lg">
-                <div class="profile-wrapper mb-4">
-                    <form action>
-                        <div class="d-flex align-items-center gap-3">
-                            <!-- profile-picture -->
-                            <div class="profile-pic position-relative">
-                                <img class="w-100" src="images/avatar.png"
-                                    alt=" الصورة الشخصيه للمستخدم فلان"
-                                    id="photo" />
-                                <div class="profile-pic-icon">
-                                    <i class="bi bi-camera-fill"></i>
-                                </div>
-                                <input
-                                    type="file"
-                                    id="file"
-                                    name="photo_profile"
-                                    accept="image/*" />
-                            </div>
-                            <!-- user-info -->
-                            <div
-                                class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-                                <div class="user-info">
-                                    <p class="fw-semibold main fs-6">اسم
-                                        المستخدم</p>
-                                    <small
-                                        class="text-muted">Username@gmail.com</small>
-                                </div>
-                                <button type="submit" class="main-btn py-2"
-                                    id="change_pic">
-                                    <i class="fa-solid fa-check me-1"></i>
-                                    تغيير الصورة
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="title-link text-center justify-content-center">
+                    <div>
+                        <h2 class="section-cta-title">التسعير الحر</h2>
+                        <h3 class="section-subtitle">اختر المنتج المناسب لك،
+                            وحدد خطة التقسيط التي تناسب ميزانيتك</h3>
+                    </div>
                 </div>
-                <div class="row gy-4">
-                    <div class="col-md-4 col-lg-3">
-                        <div class="profile-nav">
-                            <ul class="nav flex-column gap-3">
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link"
-                                        aria-current="page"
-                                        href="profile.html">
-                                        <i class="bi bi-person-fill"></i>
-                                        <span> المعلومات الشخصية </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link"
-                                        href="changePass.html">
-                                        <i class="bi bi-lock-fill"></i>
-                                        <span> تعديل كلمة المرور </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link"
-                                        href="orders.html">
-                                        <i class="bi bi-bag-check-fill"></i>
-                                        <span> طلباتي </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active"
-                                        href="compare.html">
-                                        <i class="bi bi-arrow-left-right"></i>
-                                        <span> المقارنة </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="favourite.html">
-                                        <i class="bi bi-heart-fill"></i>
-                                        <span> المفضلة </span>
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="contact-data">
+                    <form action id="contactUsForm">
+                        <div class="d-flex gap-5 justify-content-center mb-5">
+                            <a href class="btn main-btn rounded-pill">
+                                موبايلات
+                            </a>
+                            <a href class="btn main-outline-btn rounded-pill">
+                                مركبات
+                            </a>
                         </div>
-                    </div>
-                    <div class="col col-md-8 col-lg-9">
-                        <div class="profile-wrapper py-5">
-                            <div class="profile-data">
-                                <div class="table-responsive">
-                                    <table class="table compare">
-                                        <tbody>
-                                            <tr>
-                                                <th>المنتج</th>
+                        <div class="row gy-3 mb-3">
+                            <div class="col-6 form-group">
+                                <label> ادخل سعر الشراء </label>
+                                <input type="text" name="product" min="0"
+                                    class="form-control"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..?)\../g, '$1');"
+                                    placeholder="ادخل سعر الشراء">
 
-                                                <td>
-                                                    <div
-                                                        class="d-flex flex-column gap-3">
-                                                        <h3 class="fs-6 txt-cut">يعد Aspire 5 جهاز لاب توب مدمج بتصميم نحيف وغطاء معدني، مع شاشة Full HD IPS عالية الجودة ومجموعة متنوعة من المنافذ.</h3>
-                                                        <div
-                                                            class="compare-img">
-                                                            <img
-                                                                src="images/p1.png"
-                                                                alt="اسم المنتج">
-                                                        </div>
-                                                        <button
-                                                            class="del-compare">
-                                                            <i
-                                                                class="bi bi-x-circle"></i>
-                                                            إزالة من المقارنة
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div
-                                                        class="d-flex flex-column gap-3">
-                                                        <h3 class="fs-6">اسم
-                                                            المنتج</h3>
-                                                        <div
-                                                            class="compare-img">
-                                                            <img
-                                                                src="images/p1.png"
-                                                                alt="اسم المنتج">
-                                                        </div>
-                                                        <button
-                                                            class="del-compare">
-                                                            <i
-                                                                class="bi bi-x-circle"></i>
-                                                            إزالة من المقارنة
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div
-                                                        class="d-flex flex-column gap-3">
-                                                        <h3 class="fs-6">اسم
-                                                            المنتج</h3>
-                                                        <div
-                                                            class="compare-img">
-                                                            <img
-                                                                src="images/p1.png"
-                                                                alt="اسم المنتج">
-                                                        </div>
-                                                        <button
-                                                            class="del-compare">
-                                                            <i
-                                                                class="bi bi-x-circle"></i>
-                                                            إزالة من المقارنة
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                <input type="text" readonly
+                                    class="show-price form-control form-input"
+                                    name="show_price" hidden>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label> احسب قسط الميني كاش </label>
+                                <input type="text" name="deposit" value="0"
+                                    min="0"
+                                    class="form-control form-input filled"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..?)\../g, '$1');"
+                                    placeholder="المقدم">
+                            </div>
+                            <div class="col-12">
+                                <label> عدد شهور اخرى </label>
+                                <input type="text" name="other_months" value
+                                    min="0" class="form-control form-input"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..?)\../g, '$1');"
+                                    placeholder="شهور اخري">
+                            </div>
 
-                                            <tr>
-                                                <th>السعر</th>
+                            <p class="fw-bold mt-3">أنظمة التقسيط</p>
+                            <ul class="plan_list">
+                                <li>
+                                    <label>
+                                        <input type="radio" name="max_months"
+                                            hidden
+                                            value="6">
+                                        <span>6 شهر </span>
+                                        <span>1906 جنيه فى الشهر </span>
+                                    </label>
+                                </li>
 
-                                                <td>21000 ج.م</td>
-                                                <td>21000 ج.م</td>
-                                                <td>21000 ج.م</td>
-                                            </tr>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="max_months"
+                                            hidden
+                                            value="12">
 
-                                            <tr>
-                                                <th>المواصفات</th>
+                                        <span>12 شهر </span>
+                                        <span>1087 جنيه فى الشهر </span>
+                                    </label>
+                                </li>
 
-                                                <td>
-                                                    <p>يعد Aspire 5 جهاز لاب توب
-                                                        مدمج بتصميم نحيف وغطاء
-                                                        معدني، مع شاشة Full HD
-                                                        IPS عالية الجودة ومجموعة
-                                                        متنوعة من المنافذ. </p>
-                                                </td>
-                                                <td>
-                                                    <p>يعد Aspire 5 جهاز لاب توب
-                                                        مدمج بتصميم نحيف وغطاء
-                                                        معدني، مع شاشة Full HD
-                                                        IPS عالية الجودة ومجموعة
-                                                        متنوعة من المنافذ. </p>
-                                                </td>
-                                                <td>
-                                                    <p>يعد Aspire 5 جهاز لاب توب
-                                                        مدمج بتصميم نحيف وغطاء
-                                                        معدني، مع شاشة Full HD
-                                                        IPS عالية الجودة ومجموعة
-                                                        متنوعة من المنافذ. </p>
-                                                </td>
-                                            </tr>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="max_months"
+                                            hidden
+                                            value="18">
 
-                                            <tr>
-                                                <th>التقييمات</th>
+                                        <span>18 شهر </span>
+                                        <span>835 جنيه فى الشهر </span>
+                                    </label>
+                                </li>
 
-                                                <td>
-                                                    <div
-                                                        class="d-flex align-items-center gap-1">
-                                                        <div class="Stars"
-                                                            style="--rating: 4"
-                                                            aria-label="تقييم 5 من 5 نجوم"></div>
-                                                        <small
-                                                            class="comments-count">
-                                                            20 تقييم </small>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div
-                                                        class="d-flex align-items-center gap-1">
-                                                        <div class="Stars"
-                                                            style="--rating: 4"
-                                                            aria-label="تقييم 5 من 5 نجوم"></div>
-                                                        <small
-                                                            class="comments-count">
-                                                            20 تقييم </small>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div
-                                                        class="d-flex align-items-center gap-1">
-                                                        <div class="Stars"
-                                                            style="--rating: 4"
-                                                            aria-label="تقييم 5 من 5 نجوم"></div>
-                                                        <small
-                                                            class="comments-count">
-                                                            20 تقييم </small>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="max_months"
+                                            hidden
+                                            value="24">
 
-                                            <tr>
-                                                <th></th>
+                                        <span>24 شهر </span>
+                                        <span>693 جنيه فى الشهر </span>
+                                    </label>
+                                </li>
 
-                                                <td>
-                                                    <a href="cart.html"
-                                                    class="main-btn w-100 py-1"
-                                                        aria-label="إضافة المنتج إلى عربة التسوق">
-                                                        <i
-                                                            class="bi bi-cart"></i>
-                                                        <span>إضافة للسلة</span>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="cart.html"
-                                                    class="main-btn w-100 py-1"
-                                                        aria-label="إضافة المنتج إلى عربة التسوق">
-                                                        <i
-                                                            class="bi bi-cart"></i>
-                                                        <span>إضافة للسلة</span>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="cart.html"
-                                                    class="main-btn w-100 py-1"
-                                                        aria-label="إضافة المنتج إلى عربة التسوق">
-                                                        <i
-                                                            class="bi bi-cart"></i>
-                                                        <span>إضافة للسلة</span>
-                                                    </a>
-                                                </td>
-                                            </tr>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="max_months"
+                                            hidden
+                                            value="30">
 
-                                        </tbody>
-                                    </table>
-                                </div>
+                                        <span>30 شهر </span>
+                                        <span>608 جنيه فى الشهر </span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="radio" name="max_months"
+                                            hidden
+                                            value="36">
+
+                                        <span>36 شهر </span>
+                                        <span>554 جنيه فى الشهر </span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="radio" name="max_months"
+                                            hidden
+                                            value="40">
+
+                                        <span>40 شهر </span>
+                                        <span>527 جنيه فى الشهر </span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="radio" name="max_months"
+                                            hidden
+                                            value="48">
+
+                                        <span>48 شهر </span>
+                                        <span>488 جنيه فى الشهر </span>
+                                    </label>
+                                </li>
+
+                            </ul>
+
+                            <div class="installment-alert p-2 mt-3 mb-2">
+                                <span> 300 ج .م كل شهر</span>
                             </div>
                         </div>
-                    </div>
+
+                    </form>
                 </div>
             </div>
         </section>
@@ -839,8 +726,7 @@
                                     <span>
                                         : عزبة البسيوني - برج نور العرب مركز
                                         السنبلاوين -
-                                        الدقهلية
-                                    </span>
+                                        الدقهلية</span>
                                 </a>
                             </li>
                             <li>
@@ -916,5 +802,14 @@
         <!-- custom js file link  -->
         <script src="js/script.js"></script>
 
+        <script>
+      // Initialize all tooltips on the page
+      document.addEventListener('DOMContentLoaded', function () {
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+    </script>
     </body>
 </html>
