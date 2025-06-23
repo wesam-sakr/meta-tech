@@ -2636,6 +2636,34 @@ html[dir='ltr'] .step.finish::after {
    max-width: 60%;
 }
 
+.del-compare{
+   width: fit-content;
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   color: #919191;
+}
+.compare th,
+.compare td{
+   vertical-align: top;
+   padding: 18px 10px !important;
+}
+
+.compare.table td .compare-img{
+   background: #FFFFFF 0% 0% no-repeat padding-box;
+   box-shadow: 0px 3px 6px #00000029;
+   
+   /*width: 80%;*/
+
+   border-radius: 6px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+   text-align: center;
+}
+
 /* --------== about page ==-------- */
 .about p {
    line-height: 1.8;
