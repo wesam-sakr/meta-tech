@@ -488,7 +488,8 @@
                                     type="file"
                                     id="file"
                                     name="photo_profile"
-                                    accept="image/*" />
+                                    accept="image/*" 
+                                />
                             </div>
                             <!-- user-info -->
                             <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
@@ -528,7 +529,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active"
+                                    <a class="nav-link"
                                         href="orders.html">
                                         <i class="bi bi-bag-check-fill"></i>
                                         <span> طلباتي </span>
@@ -541,7 +542,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="favourite.html">
+                                    <a class="nav-link active" href="favourite.html">
                                         <i class="bi bi-heart-fill"></i>
                                         <span> المفضلة </span>
                                     </a>
@@ -553,54 +554,133 @@
                         <div class="profile-wrapper py-5">
                             <div class="profile-data">
                                 <div class="table-responsive">
-                                    <table class="table">
+                                    <table class="table favourite">
                                         <thead>
                                             <tr>
-                                                <th>رقم الطلب</th>
-                                                <th>الكمية</th>
+                                                <th>
+                                                    <span class="opacity-0">del</span>
+                                                </th>
+                                                <th>المنتج</th>
                                                 <th>السعر</th>
-                                                <th>التاريخ</th>
-                                                <th>حالة الطلب</th>
+                                                <th>
+                                                    <span class="opacity-0">del</span>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <a href="trackOrder.html" class="main">#24548</a>
+                                                    <button class="del-fav">
+                                                        <i class="bi bi-x"></i>
+                                                    </button>
                                                 </td>
-                                                <td>5</td>
-                                                <td>21000 ج.م</td>
-                                                <td>سبتمبر 8 ,2022</td>
                                                 <td>
-                                                    <div class="status-tag completed">
-                                                        <p class="status-tag__txt">  تم التوصيل </p>
+                                                    <div class="d-flex flex-md-nowrap flex-wrap align-items-center gap-2">
+                                                        <img src="images/p1.png" alt="">
+                                                        <span class="product_name">
+                                                        جهاز Xbox Series S - سعة 512 جيجابايت SSD مع وحدة تحكم لاسلكية
+                                                        </span>
                                                     </div>
+                                                </td>
+                                                
+                                                <td>21000ج.م</td>
+                                                <td>
+                                                    <a href="cart.html" class="main-btn w-100 py-1" aria-label="إضافة المنتج إلى عربة التسوق">
+                                                        <i class="bi bi-cart"></i>
+                                                        <span>إضافة للسلة</span>
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <a href="trackOrder.html" class="main">#24548</a>
+                                                    <button class="del-fav">
+                                                        <i class="bi bi-x"></i>
+                                                    </button>
                                                 </td>
-                                                <td>3</td>
-                                                <td>21000 ج.م</td>
-                                                <td>سبتمبر 8 ,2022</td>
                                                 <td>
-                                                    <div class="status-tag shipped">
-                                                        <p class="status-tag__txt">  تم الشحن </p>
+                                                    <div class="d-flex flex-md-nowrap flex-wrap align-items-center gap-2">
+                                                        <img src="images/p1.png" alt="">
+                                                        <span class="product_name">
+                                                        جهاز Xbox Series S - سعة 512 جيجابايت SSD مع وحدة تحكم لاسلكية
+                                                        </span>
                                                     </div>
+                                                </td>
+                                                
+                                                <td>21000ج.م</td>
+                                                <td>
+                                                    <a href="cart.html" class="main-btn w-100 py-1" aria-label="إضافة المنتج إلى عربة التسوق">
+                                                        <i class="bi bi-cart"></i>
+                                                        <span>إضافة للسلة</span>
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <a href="trackOrder.html" class="main">#24548</a>
+                                                    <button class="del-fav">
+                                                        <i class="bi bi-x"></i>
+                                                    </button>
                                                 </td>
-                                                <td>8</td>
-                                                <td>21000 ج.م</td>
-                                                <td>سبتمبر 8 ,2022</td>
                                                 <td>
-                                                    <div class="status-tag cancelled">
-                                                        <p class="status-tag__txt">  ملغي </p>
+                                                    <div class="d-flex flex-md-nowrap flex-wrap align-items-center gap-2">
+                                                        <img src="images/p1.png" alt="">
+                                                        <span class="product_name">
+                                                        جهاز Xbox Series S - سعة 512 جيجابايت SSD مع وحدة تحكم لاسلكية
+                                                        </span>
                                                     </div>
+                                                </td>
+                                                
+                                                <td>21000ج.م</td>
+                                                <td>
+                                                    <a href="cart.html" class="main-btn w-100 py-1" aria-label="إضافة المنتج إلى عربة التسوق">
+                                                        <i class="bi bi-cart"></i>
+                                                        <span>إضافة للسلة</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="del-fav">
+                                                        <i class="bi bi-x"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-md-nowrap flex-wrap align-items-center gap-2">
+                                                        <img src="images/p1.png" alt="">
+                                                        <span class="product_name">
+                                                        جهاز Xbox Series S - سعة 512 جيجابايت SSD مع وحدة تحكم لاسلكية
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                
+                                                <td>21000ج.م</td>
+                                                <td>
+                                                    <a href="cart.html" class="main-btn w-100 py-1" aria-label="إضافة المنتج إلى عربة التسوق">
+                                                        <i class="bi bi-cart"></i>
+                                                        <span>إضافة للسلة</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="del-fav">
+                                                        <i class="bi bi-x"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-md-nowrap flex-wrap align-items-center gap-2">
+                                                        <img src="images/p1.png" alt="">
+                                                        <span class="product_name">
+                                                        جهاز Xbox Series S - سعة 512 جيجابايت SSD مع وحدة تحكم لاسلكية
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                
+                                                <td>21000ج.م</td>
+                                                <td>
+                                                    <a href="cart.html" class="main-btn w-100 py-1" aria-label="إضافة المنتج إلى عربة التسوق">
+                                                        <i class="bi bi-cart"></i>
+                                                        <span>إضافة للسلة</span>
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </tbody>

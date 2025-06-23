@@ -2636,7 +2636,7 @@ html[dir='ltr'] .step.finish::after {
    max-width: 60%;
 }
 
-.del-compare{
+.del-compare {
    width: fit-content;
    background-color: transparent;
    display: flex;
@@ -2644,24 +2644,44 @@ html[dir='ltr'] .step.finish::after {
    gap: 6px;
    color: #919191;
 }
-.compare th,
-.compare td{
+
+.profile .compare th,
+.profile .compare td {
    vertical-align: top;
+}
+
+.profile td,
+.profile th {
    padding: 18px 10px !important;
 }
 
-.compare.table td .compare-img{
+.profile .favourite th,
+.profile .favourite td {
+   padding: 4px 10px !important;
+}
+
+.compare.table td .compare-img {
    background: #FFFFFF 0% 0% no-repeat padding-box;
    box-shadow: 0px 3px 6px #00000029;
-   
-   /*width: 80%;*/
-
    border-radius: 6px;
    -webkit-border-radius: 6px;
    -moz-border-radius: 6px;
    -ms-border-radius: 6px;
    -o-border-radius: 6px;
    text-align: center;
+}
+
+.del-fav {
+   color: #FF0000;
+   background: #FFD6D6;
+   width: 36px;
+   height: 36px;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   font-size: 20px;
 }
 
 /* --------== about page ==-------- */
@@ -2811,6 +2831,10 @@ html[dir='ltr'] .step.finish::after {
    .owl-carousel .owl-nav button.owl-next {
       inset-inline-start: unset;
       inset-inline-end: -5px;
+   }
+
+   .profile .table td .product_name {
+      max-width: 100%;
    }
 
    .products-container {
