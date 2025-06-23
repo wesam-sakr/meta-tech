@@ -309,6 +309,7 @@ $(document).ready(function () {
           img.setAttribute("src", reader.result);
         });
         reader.readAsDataURL(choosedFile);
+        $('#change_pic').css("opacity", 1);
       }
     });
   }

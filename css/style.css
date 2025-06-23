@@ -2020,13 +2020,17 @@ ul.plan_list li:last-child {
    flex-wrap: wrap;
 }
 
+
+.profile-data .form-control,
 .contact-data .form-control,
 .contact-data textarea {
-   background: #FAFAFA 0% 0% no-repeat padding-box;
-   border: 1px solid #D9D9D9;
+   background: #FCFCFC;
+   border: 1px solid var(--border);
    border-radius: 5px;
 }
 
+
+.profile-data .form-control:focus,
 .contact-data .form-control:focus,
 .contact-data textarea:focus {
    border-color: var(--main);
@@ -2271,8 +2275,7 @@ html[dir='ltr'] .step.finish::after {
 
 
 /* --------== products page ==-------- */
-.filter,
-.profile-nav {
+.filter{
    border: 1px solid var(--border);
    border-radius: 11px;
    padding: 1.5rem;
@@ -2322,33 +2325,30 @@ html[dir='ltr'] .step.finish::after {
    display: flex;
    align-items: center;
    gap: 12px;
-   color: #2A2A2A;
-   margin-bottom: 1rem;
-   font-weight: bold;
+   color: #22304A;
+   border: 1px solid #ECECEC;
+   padding: .5rem 1rem;
+   border-radius: 50px 10px 10px 50px;
 }
 
 .profile-nav .nav-link.active {
    color: var(--white);
    background: var(--main);
-   border-radius: 10px;
 }
 
 .profile-nav .nav-link i {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 34px;
-   height: 34px;
-   border-radius: 50%;
-   background: var(--white);
-   color: #919191;
-}
-
-.profile-nav .nav-link.active i {
    color: var(--main);
 }
 
+.profile-nav .nav-link.active i {
+   color: var(--white);
+}
 
+.profile-wrapper{
+   border: 1px solid var(--border);
+   border-radius: 20px;
+   padding: .75rem 2rem;
+}
 .profile .profile-pic-icon {
    position: absolute;
    top: 0%;
@@ -2360,9 +2360,9 @@ html[dir='ltr'] .step.finish::after {
    justify-content: center;
    z-index: 3;
    opacity: 0;
-   background-color: #56878b57;
+   background-color: rgba(var(--mainOp), .25);
    color: #fff;
-   font-size: xx-large;
+   font-size: x-large;
    border-radius: 50%;
    transition: 0.2s;
    -webkit-border-radius: 50%;
@@ -2372,7 +2372,7 @@ html[dir='ltr'] .step.finish::after {
 }
 
 .profile .profile-pic {
-   width: 100px;
+   width: 90px;
    aspect-ratio: 1 / 1;
    border-radius: 50%;
    overflow: hidden;
@@ -2381,6 +2381,7 @@ html[dir='ltr'] .step.finish::after {
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
+   border: 1px solid var(--border);
 }
 
 .profile .profile-pic img {
@@ -2408,6 +2409,9 @@ html[dir='ltr'] .step.finish::after {
    opacity: 1;
 }
 
+#change_pic{
+   opacity: 0;
+}
 .profile label {
    margin-bottom: .5rem;
 }
@@ -2616,8 +2620,7 @@ html[dir='ltr'] .step.finish::after {
       width: 100%;
    }
 
-   .filter,
-   .profile-nav {
+   .filter{
       display: block;
       width: 400px;
       transform: translate(400px);
@@ -2633,8 +2636,7 @@ html[dir='ltr'] .step.finish::after {
       background: white;
    }
 
-   .filter.filter-toggle,
-   .profile-nav.Pnav-toggle {
+   .filter.filter-toggle {
       transform: translate(0);
    }
 

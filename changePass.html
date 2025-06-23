@@ -464,7 +464,7 @@
                         <li class="breadcrumb-item"><a
                                 href="index.html">الرئيسية</a></li>
                         <li class="breadcrumb-item active"
-                            aria-current="page">الملف الشخصي</li>
+                            aria-current="page">تعديل كلمة المرور</li>
                     </ol>
                 </nav>
             </div>
@@ -509,7 +509,7 @@
                             <ul class="nav flex-column gap-3">
                                 <li class="nav-item">
                                     <a
-                                        class="nav-link active"
+                                        class="nav-link"
                                         aria-current="page"
                                         href="profile.html">
                                         <i class="bi bi-person-fill"></i>
@@ -517,7 +517,8 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="changePass.html">
+                                    <a class="nav-link active"
+                                        href="changePass.html">
                                         <i class="bi bi-lock-fill"></i>
                                         <span> تعديل كلمة المرور </span>
                                     </a>
@@ -547,34 +548,48 @@
                         <div class="profile-wrapper py-5">
                             <div class="profile-data">
                                 <form action method="post">
-                                    <div class="row gy-4 mb-3">
-                                        <!-- الاسم الاول -->
+                                    <div class="row gy-3 mb-3">
+                                        <!-- كلمة المرور الحالية -->
                                         <div class="col-12">
-                                            <label>الاسم </label>
-                                            <input
-                                                class="form-control"
-                                                name
-                                                value
-                                                type="text" />
-                                        </div>
-                                        <!-- البريد الالكتروني -->
-                                        <div class="col-12">
-                                            <label>البريد الالكتروني </label>
-                                            <input
-                                                class="form-control"
-                                                name="email"
-                                                value
-                                                type="email" />
-                                        </div>
-                                        <!-- رقم الجوال -->
-                                        <div class="col-12">
-                                            <label>رقم الجوال</label>
+                                            <label>كلمة المرور الحالية</label>
                                             <div class="input-group">
-                                                <input type="text"
+                                                <input type="password"
                                                     class="form-control">
-                                                <span class="input-group-text">
-                                                    +20
-                                                </span>
+                                                <button type="button"
+                                                    class="input-group-text pass"
+                                                    title="show pass"
+                                                    aria-label="اظهار كلمة المرور">
+                                                    <i class="bi bi-lock"></i>
+                                                </button>
+                                            </div>
+                                            <a href="forgotPass.html" class="text-decoration-underline text-muted">
+                                                <small> نسيت كلمة المرور </small>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <label> كلمة المرور الجديدة </label>
+                                            <div class="input-group">
+                                                <input type="password"
+                                                    class="form-control">
+                                                <button type="button"
+                                                    class="input-group-text pass"
+                                                    title="show pass"
+                                                    aria-label="اظهار كلمة المرور">
+                                                    <i class="bi bi-lock"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label>تأكيد كلمة المرور الجديدة</label>
+                                            <div class="input-group">
+                                                <input type="password"
+                                                    class="form-control">
+                                                <button type="button"
+                                                    class="input-group-text pass"
+                                                    title="show pass"
+                                                    aria-label="اظهار كلمة المرور">
+                                                    <i class="bi bi-lock"></i>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
